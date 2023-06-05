@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guayaba Boutique - Promocionales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    
+    header {
+      background-color: #e1d9d3;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #6b5d5d;
+    }
+    
+    .video-container {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    
+    .video-player {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    
+    .video-player video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .video-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .video-controls button {
+      background-color: #d6e5e3;
+      border: none;
+      color: #6b5d5d;
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Guayaba Boutique-Promocionales</h1>
+    <center>
+      <img src="LogoGuayaba.png" alt="Playera 1" width="100">
+    </center>
+  </header>
+  
+  <div class="video-container">
+    <center>
+     <h2>Coleccion Fanso</h2>
+    </center>
+    <div class="video-player">
+      <video id="video2" autoplay loop muted>
+        <source src="VideoCraneo2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  
+  <div class="video-container">
+    <center>
+      <h2>Coleccion Craneo</h2>
+    </center>
+    <div class="video-player">
+      <video id="video1" controls>
+        <source src="VideoCraneo1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video-controls">
+      <button id="play-pause-btn" onclick="togglePlayPause()">Reproducir</button>
+      <button id="mute-btn" onclick="toggleMute()">Volumen</button>
+    </div>
+  </div>
+  
+  <script>
+    var video1 = document.getElementById('video1');
+    var playPauseButton = document.getElementById('play-pause-btn');
+    var muteButton = document.getElementById('mute-btn');
+    
+    function togglePlayPause() {
+      if (video1.paused) {
+        video1.play();
+        playPauseButton.innerHTML = 'Pausar';
+      } else {
+        video1.pause();
+        playPauseButton.innerHTML = 'Reproducir';
+      }
+    }
+    
+    function toggleMute() {
+      if (video1.muted) {
+        video1.muted = false;
+        muteButton.innerHTML = 'Volumen';
+      } else {
+        video1.muted = true;
+        muteButton.innerHTML = 'Sin Volumen';
+      }
+    }
+  </script>
+</body>
+</html>

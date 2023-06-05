@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guayaba Boutique</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    
+    header {
+      background-color: #e1d9d3;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #6b5d5d;
+    }
+    
+    nav {
+      background-color: #d6e5e3;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav a {
+      color: #6b5d5d;
+      text-decoration: none;
+      margin: 10px;
+    }
+    
+    section {
+      margin: 20px;
+    }
+    
+    .product {
+      background-color: #f2e8e6;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .product img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    footer {
+      background-color: #d6e5e3;
+      padding: 20px;
+      text-align: center;
+      color: #6b5d5d;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider-playeras').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false
+      });
+      
+      $('.slider-sudaderas').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false
+      });
+      
+      $('.slider-accesorios').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Guayaba Boutique</h1>
+    <center>
+      <img src="LogoGuayaba.png" alt="Playera 1" width="100">
+    </center>
+  </header>
+
+  <nav>
+    <a href="#Home.html">Inicio</a>
+    <a href="TablaProductos.html">Inventario</a>
+    <a href="Pedidos.html">Pedidos</a>
+    <a href="Videos Promocionales.html">Promocionales</a>
+    <a href="Registro.html">Registro</a>
+    <a href="PaginaPersonal.html">Contacto</a>
+  </nav>
+  
+  <section>
+    <center>
+    <div class="slider-playeras">
+      <div class="product">
+        <img src="Playera1.png" alt="Playera 1">
+        <h2>Fanso amarilla</h2>
+        <p>Precio: $350</p>
+      </div>
+      
+      <div class="product">
+        <img src="Playera2.png" alt="Playera 2">
+        <h2>Fanso Negra</h2>
+        <p>Precio: $300</p>
+      </div>
+      
+      <div class="product">
+        <img src="Playera3.png" alt="Playera 3">
+        <h2>Fanso Verde</h2>
+        <p>Precio: $250</p>
+      </div>
+    </div>
+  </center>
+  
+  <center>
+    <div class="slider-sudaderas">
+      <div class="product">
+        <img src="Sudadera1.png" alt="Sudadera 1">
+        <h2>Sudadera Craneo Tye Die</h2>
+        <p>Precio: $980</p>
+       
+      </div>
+      
+      <div class="product">
+        <img src="Sudadera2.png" alt="Sudadera 2">
+        <h2>Sudadera Sloth Brite Negra</h2>
+        <p>Precio: $760</p>
+      </div>
+      
+      <div class="product">
+        <img src="Sudadera3.png" alt="Sudadera 3">
+        <h2>Sudadera Craneo Blanca</h2>
+        <p>Precio: $899</p>
+      </div>
+    </div>
+  </center>
+  
+  <center>
+    <div class="slider-accesorios">
+      <div class="product">
+        <img src="Gorro.png" alt="Sudadera 1">
+        <h2>Gorro Morado Craneo</h2>
+        <p>Precio: $980</p>
+       
+      </div>
+      
+      <div class="product">
+        <img src="Grinder.png" alt="Sudadera 2">
+        <h2>Grinder Craneo</h2>
+        <p>Precio: $160</p>
+      </div>
+      
+      <div class="product">
+        <img src="Alfombra.png" alt="Sudadera 3">
+        <h2>Alfombra Mago</h2>
+        <p>Precio: $1899</p>
+      </div>
+    </div>
+  </center>  
+  </section>
+  
+</body>
+</html>
